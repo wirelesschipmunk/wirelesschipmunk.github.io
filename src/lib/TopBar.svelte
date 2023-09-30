@@ -1,4 +1,6 @@
 <script>
+	import slugcatPFPImg from "./images/slugcat-pfp.png";
+
 	let dark = true;
 
 	$: if (dark === true) {
@@ -9,7 +11,7 @@
 </script>
 
 <div>
-	<img src="src/lib/images/slugcat-pfp.png" alt="slugcat-pfp" />
+	<img src={slugcatPFPImg} alt="slugcat-pfp" />
 
 	<h1>wirelesschipmunk</h1>
 

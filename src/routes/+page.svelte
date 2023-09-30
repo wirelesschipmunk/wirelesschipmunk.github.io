@@ -1,5 +1,9 @@
 <script>
 	import TopBar from "../lib/TopBar.svelte";
+	import dumplingsYumImg from "../lib/images/dumplings-yum.png";
+	import epicTriviaImg from "../lib/images/epic-trivia.png";
+	import hackerTypeImg from "../lib/images/hacker-type.png";
+	import rockPaperScissorsImg from "../lib/images/rock-paper-scissors.png";
 
 	const projects = [
 		{
@@ -8,7 +12,7 @@
 			siteLink: "https://wirelesschipmunk.com/dumplings-yum/",
 			description:
 				"A nice looking restuarant website for chinese food. I also have a svelte version.",
-			img: "src/lib/images/dumplings-yum.png"
+			img: dumplingsYumImg
 		},
 
 		{
@@ -17,7 +21,7 @@
 			siteLink: "https://wirelesschipmunk.com/epic-trivia/",
 			description:
 				"Pretty terrible triva, ok design. I got the colors from the vscode theme Campfire Syntax made by Nicholas Morrison.",
-			img: "src/lib/images/epic-trivia.png"
+			img: epicTriviaImg
 		},
 
 		{
@@ -25,7 +29,7 @@
 			repoLink: "https://github.com/wirelesschipmunk/hacker-type",
 			siteLink: "https://wirelesschipmunk.com/hacker-type/",
 			description: "Small clone of HackerTyper.com. Missing some features.",
-			img: "src/lib/images/hacker-type.png"
+			img: hackerTypeImg
 		},
 
 		{
@@ -33,7 +37,7 @@
 			repoLink: "https://github.com/wirelesschipmunk/rock-paper-scissors",
 			siteLink: "https://wirelesschipmunk.com/Rock-Paper-Scissors/",
 			description: "My first project! Arguably the best. I'm planning to add a computer version.",
-			img: "src/lib/images/rock-paper-scissors.png"
+			img: rockPaperScissorsImg
 		}
 	];
 </script>
