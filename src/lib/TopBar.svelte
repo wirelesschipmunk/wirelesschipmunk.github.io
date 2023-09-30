@@ -1,15 +1,32 @@
+<script>
+	let dark = true;
+
+	$: if (dark === true) {
+		console.log("dark");
+	} else {
+		console.log("not dark");
+	}
+</script>
+
 <div>
 	<img src="src/lib/images/slugcat-pfp.png" alt="slugcat-pfp" />
 
 	<h1>wirelesschipmunk</h1>
 
+	<a href="https://github.com/wirelesschipmunk/" target="_blank" style="margin-left: auto;">
+		<button>github!</button>
+	</a>
+
 	<button
-		style="margin-left: auto;"
-		on:click={() => (window.location = "https://github.com/wirelesschipmunk/")}>github!</button
+		on:click={() => {
+			window.scrollTo({
+				top: 2100,
+				behavior: "smooth"
+			});
+		}}>about!</button
 	>
-	<button>about!</button>
 	<button>&#9775;</button>
-	<button>&#9776;</button>
+	<!-- <button>&#9776;</button> -->
 </div>
 
 <style>
@@ -26,12 +43,12 @@
 	}
 
 	img {
-		border-radius: 2em;
+		border-radius: 3em;
 		width: 55px;
 		box-shadow: 2px 2px 0px rebeccapurple;
 		border: solid;
 		border-color: gray;
-		border-width: 1.85px;
+		border-width: 2px;
 		margin-left: 0.3em;
 	}
 
@@ -54,5 +71,10 @@
 		background-color: rebeccapurple;
 		box-shadow: 1px 1px 0px rebeccapurple;
 		opacity: 0.8;
+	}
+
+	.light {
+		color: rgb(28, 28, 28);
+		background-color: whitesmoke;
 	}
 </style>
